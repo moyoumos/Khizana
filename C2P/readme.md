@@ -1,4 +1,4 @@
-C2 programmer using Arduino as probe.
+**C2** programmer for **C8051** and **EFM8** devices from Silabs, using Arduino as probe.
 
 this programmer is a work-in-progress enhanced version of https://github.com/x893/C2.Flash .
 
