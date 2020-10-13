@@ -4,5 +4,9 @@ this programmer is a work-in-progress enhanced version of https://github.com/x89
 
 **to add new chip:** copy-paste and modify a line in *DeviceList.txt* file according to new chip.
 
-I successfully programmed EFM8LB12 with this setup.
+I successfully programmed the following devices with this setup:
+
+-EFM8LB12
+
+-EFM8UB31
 
