@@ -57,7 +57,7 @@
 #define GET_FPDAT_ADDRESS		0x46
 
 // C2 status return codes
-#define COMMAND_TEST        0x56  //my
+#define COMMAND_TEST      	        0x56  //my
 #define COMMAND_INVALID			0x00
 #define COMMAND_NO_CONNECT		0x01
 #define COMMAND_FAILED			0x02
@@ -68,13 +68,11 @@
 #define COMMAND_READ_02			0x82
 #define COMMAND_READ_03			0x83
 #define COMMAND_READ_04			0x84
-
 // C2 FP Command
 #define C2_FP_ERASE_DEVICE		0x03
 #define C2_FP_READ_FLASH		0x06
 #define C2_FP_WRITE_FLASH		0x07
 #define C2_FP_ERASE_SECTOR		0x08
-
 #define C2_FP_READ_XRAM			0x0E
 #define C2_FP_WRITE_XRAM		0x0F
 
@@ -84,14 +82,13 @@
 #define C2ADD_DEVICEID	0
 #define C2ADD_REVISION	1
 #define C2ADD_FPCTL		2
-byte	C2ADD_FPDAT		= 0xAD;
 
-byte DeviceID		= 0;
-byte ExtraID    = 0;
-byte C2_CONNECTED	= 0;
-byte LEDS_STATE		= 0;
-byte C2_RESPONSE	= 0;
-
+byte C2ADD_FPDAT= 0xAD;
+byte DeviceID= 0;
+byte ExtraID= 0;
+byte C2_CONNECTED= 0;
+byte LEDS_STATE= 0;
+byte C2_RESPONSE= 0;
 byte cmdPackage[140];
 byte cmdPackageLength;
 byte cmdPackageGet;
@@ -102,7 +99,6 @@ void setup()
 	LED_Off();
 	C2CK_DriverOn();
 	C2D_DriverOff();
-
 	Serial.begin(115200);
         Serial.println("C2 Flash");
 	BlinkLED(5);
@@ -171,8 +167,8 @@ void loop()
 			break;
 //		case C2_WRITE_RAM:
 //			C2_Write_Memory(0xC);
-    case C2_SET_FPADRSS:
-      C2_Set_FPadrss();
+	        case C2_SET_FPADRSS:
+		        C2_Set_FPadrss();
 			break;
 		case C2_READ_FLASH:
 			C2_Read_Memory(C2_FP_READ_FLASH);
@@ -200,7 +196,6 @@ void loop()
 	}
 	Serial.write('$');
 	PutByte(C2_RESPONSE);
-
 	LED_Off();
 }
 
