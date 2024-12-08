@@ -1,7 +1,7 @@
 ﻿"# Name",				"ID",	"Extraid",	"Flash size",	"Flash sector Size", "Lock Type",	"Single lock",	"Bottom",	   "FPREG"
 "C8051F320",			"0x09",	"0x58",		"0x4000",		512,				  "FLT_SINGLE",	"0x3DFF",		"0x3E00",		"0xB4"
 "C8051F321",			"0x09",	"0x59",		"0x4000",		512,				  "FLT_SINGLE",	"0x3DFF",		"0x3E00",		"0xB4"
-"C8051F342",			"0x0F",	"0x7F",		"0x10000",		512,				  "FLT_SINGLE",	"0xfbff",		"0xfc00",		"0xAD"
+"C8051F342",			"0x0F",	"0x7F",		"0x10000",		512,				  "FLT_SINGLE",	"0xFBFF",		"0xfc00",		"0xAD"
 "EFM8LB12F64E-QSOP24",	"0x34",	"0x43",		"0xFBFF",		512,				  "FLT_SINGLE",	"0xFBFF",		"0xfc00",		"0xB4"
 "EFM8LB12F64E-QFP32",	"0x34",	"0x42",		"0xFBFF",		512,				  "FLT_SINGLE",	"0xFBFF",		"0xfc00",		"0xB4"
 "EFM8UB31F40G-QSOP24",	"0x36",	"0x02",		"0x9A00",		512,				  "FLT_SINGLE",	"0xFBFF",		"0X9A00",		"0xB4"
