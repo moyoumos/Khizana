@@ -22,14 +22,11 @@ namespace C2.Flash
 		COMMAND_BAD_DATA = 0x05,
 		COMMAND_OK = 0x0D,
 		COMMAND_DROP = 0x55,
-
 		COMMAND_TEST = 0x56,//my
-
 		COMMAND_READ_01 = 0x81,
 		COMMAND_READ_02 = 0x82,
 		COMMAND_READ_03 = 0x83,
 		COMMAND_READ_04 = 0x84,
-
 		COMMAND_NO_RESPONSE = 0xFF,
 		COMMAND_BAD_RESPONSE = 0xFE
 	}
@@ -43,7 +40,6 @@ namespace C2.Flash
 		const byte C2_UNIQUE_DEVICE_ID = 0x23;
 		const byte C2_TARGET_GO = 0x24;
 		const byte C2_TARGET_HALT = 0x25;
-
 		const byte C2_READ_SFR = 0x28;
 		const byte C2_WRITE_SFR = 0x29;
 		const byte C2_READ_RAM = 0x2A;
@@ -51,26 +47,21 @@ namespace C2.Flash
 		const byte C2_READ_FLASH = 0x2E;
 		const byte C2_WRITE_FLASH = 0x2F;
 		const byte C2_ERASE_PAGE = 0x30;
-
 		const byte C2_ADDRESS_WRITE = 0x38;
 		const byte C2_ADDRESSREAD = 0x39;
 		const byte C2_DATA_WRITE = 0x3A;
 		const byte C2_DATAREAD = 0x3B;
-
 		const byte C2_ERASE_FLASH_03 = 0x3C;
 		const byte C2_ERASE_FLASH_04 = 0x3D;
 		const byte C2_READ_XRAM = 0x3E;
 		const byte C2_WRITE_XRAM = 0x3F;
-
 		const byte GET_FIRMWARE_VERSION = 0x44;
 		const byte SET_FPDAT_ADDRESS = 0x45;
 		const byte GET_FPDAT_ADDRESS = 0x46;
-
 		const byte COMMAND_DROP = 0x55;
 		const byte COMMAND_NO_RESPONSE = 0xFF;
 		const byte COMMAND_BAD_RESPONSE = 0xFE;
 		#endregion
-
 		#region Variables 
 		private SerialPort port = null;
 		private object locked = new object();
@@ -78,7 +69,6 @@ namespace C2.Flash
 		private char[] COMMA = new char[] { ',' };
 		private List<C2Device> devices = new List<C2Device>();
 		#endregion
-
 		public frmMain()
 		{
 			InitializeComponent();
